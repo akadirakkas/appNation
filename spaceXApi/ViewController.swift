@@ -48,7 +48,6 @@ class ViewController: UIViewController {
         nameLabel.text = data.name
         detailsLabel.text = data.details
         DispatchQueue.main.async {
-            let url =
                 self.patchImage.sd_setImage(with: URL(string: data.links.patch.small), completed: nil)
         }
         
