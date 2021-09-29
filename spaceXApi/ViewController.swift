@@ -16,10 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var detailsLabel: UILabel!
     
     
-    
+    //MARK: - Properties
     private let manager = DataManager()
     
-
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
@@ -27,6 +27,9 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+    //MARK: - Methods
     
     func fetchData () {
         manager.fetchData {[weak self] result in
@@ -45,7 +48,6 @@ class ViewController: UIViewController {
         nameLabel.text = data.name
         detailsLabel.text = data.details
         DispatchQueue.main.async {
-//            let remoteImageURL = String()
             let url =
                 self.patchImage.sd_setImage(with: URL(string: data.links.patch.small), completed: nil)
         }
