@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="spaceXApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rs0-rE-T82">
+                                <rect key="frame" x="53" y="44" width="308" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="d1c-HA-52L"/>
+                                    <constraint firstAttribute="width" constant="308" id="lmF-ti-4T7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEv-QK-9GF">
+                                <rect key="frame" x="96" y="258" width="222" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="UNv-oX-qH7"/>
+                                    <constraint firstAttribute="height" constant="40" id="ati-hn-KZd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oo-wm-Y71">
+                                <rect key="frame" x="20" y="318" width="374" height="385"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="4jt-12-gv6"/>
+                                    <constraint firstAttribute="height" constant="385" id="FGX-m5-15D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7oo-wm-Y71" firstAttribute="top" secondItem="yEv-QK-9GF" secondAttribute="bottom" constant="20" id="4rF-eq-qea"/>
+                            <constraint firstItem="Rs0-rE-T82" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FSl-ea-iFy"/>
+                            <constraint firstItem="Rs0-rE-T82" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tun-VL-nGT"/>
+                            <constraint firstItem="yEv-QK-9GF" firstAttribute="top" secondItem="Rs0-rE-T82" secondAttribute="bottom" constant="24" id="mT2-xB-34F"/>
+                            <constraint firstItem="7oo-wm-Y71" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o58-w6-Z2y"/>
+                            <constraint firstItem="yEv-QK-9GF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zHq-nN-ypu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailsLabel" destination="7oo-wm-Y71" id="FzB-ag-AOs"/>
+                        <outlet property="nameLabel" destination="yEv-QK-9GF" id="0Bo-04-PDu"/>
+                        <outlet property="patchImage" destination="Rs0-rE-T82" id="8eG-yz-69U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
